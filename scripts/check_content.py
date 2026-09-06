@@ -18,6 +18,7 @@ REQUIRED = {
     "docs/index.md",
     "docs/guide/syllabus-map.md",
     "docs/guide/coverage.md",
+    "docs/guide/visual-review.md",
     "docs/exercises/subject-a.md",
     "docs/exercises/subject-b.md",
     "docs/glossary.md",
@@ -41,6 +42,23 @@ for path in MD_FILES:
             errors.append(
                 f"broken local link: {path.relative_to(ROOT)} -> {target}"
             )
+
+chapter_files = sorted((ROOT / "docs/chapters").glob("*.md"))
+if len(chapter_files) != 12:
+    errors.append(f"docs/chapters must contain exactly 12 chapters: {len(chapter_files)}")
+for path in chapter_files:
+    text = path.read_text(encoding="utf-8")
+    table_count = len(re.findall(r"^\|(?:---|:?-)", text, re.MULTILINE))
+    diagram_count = text.count("```text")
+    question_count_in_chapter = len(re.findall(r"^### 問\d+", text, re.MULTILINE))
+    if table_count < 2:
+        errors.append(f"chapter must contain at least 2 tables: {path.name}")
+    if diagram_count < 2:
+        errors.append(f"chapter must contain at least 2 text diagrams: {path.name}")
+    if question_count_in_chapter < 4:
+        errors.append(
+            f"chapter must contain at least 4 confirmation questions: {path.name}"
+        )
 
 registry = (ROOT / "references.yml").read_text(encoding="utf-8")
 source_ids = re.findall(r"^  - id: (\S+)$", registry, re.MULTILINE)
