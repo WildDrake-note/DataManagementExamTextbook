@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MD_FILES = sorted(ROOT.glob("*.md")) + sorted((ROOT / "docs").rglob("*.md"))
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 TABLE_SEPARATOR_RE = re.compile(
-    r"^\|\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$", re.MULTILINE
+    r"^(?:\|\s*)?:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$", re.MULTILINE
 )
 FENCE_START_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 REQUIRED = {
