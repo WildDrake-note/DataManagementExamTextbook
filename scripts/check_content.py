@@ -62,6 +62,16 @@ question_count = len(re.findall(r"^\*\*問\d+\*\*", subject_a, re.MULTILINE))
 if question_count < 24:
     errors.append(f"subject-a must contain at least 24 questions: {question_count}")
 
+subject_b = (ROOT / "docs/exercises/subject-b.md").read_text(encoding="utf-8")
+case_count = len(re.findall(r"^## ケース\d+：", subject_b, re.MULTILINE))
+case_question_count = len(re.findall(r"^### 問\d+$", subject_b, re.MULTILINE))
+if case_count < 8:
+    errors.append(f"subject-b must contain at least 8 cases: {case_count}")
+if case_question_count < 21:
+    errors.append(
+        f"subject-b must contain at least 21 case questions: {case_question_count}"
+    )
+
 coverage = (ROOT / "docs/guide/coverage.md").read_text(encoding="utf-8")
 skill_rows = len(re.findall(r"^\| [1-4]-\d ", coverage, re.MULTILINE))
 if skill_rows != 16:
@@ -76,5 +86,6 @@ if errors:
 print(
     f"CHECK PASSED: {len(MD_FILES)} Markdown files, "
     f"{len(source_ids)} references, {question_count} subject-A questions, "
+    f"{case_count} subject-B cases, {case_question_count} case questions, "
     f"{skill_rows} subject-B items"
 )
