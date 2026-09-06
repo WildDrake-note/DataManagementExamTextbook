@@ -12,6 +12,7 @@
 - [シラバス対応表](docs/guide/syllabus-map.md)
 - [用語集](docs/glossary.md)
 - [参考資料と出典方針](docs/references.md)
+- [継続課題](docs/project/backlog.md)
 
 ## 現在の状態
 

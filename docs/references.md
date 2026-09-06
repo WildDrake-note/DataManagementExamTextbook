@@ -9,6 +9,11 @@
 - [データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
 - [科目A サンプル問題](https://www.ipa.go.jp/shiken/syllabus/henkou/2026/rcu1hd000000yulp-att/dm_kamoku_a_sample.pdf)
 - [科目B サンプル問題](https://www.ipa.go.jp/shiken/syllabus/henkou/2026/rcu1hd000000yulp-att/dm_kamoku_b_sample.pdf)
+- [新試験制度のシラバス案について](https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260630.html)
+- [新試験制度のサンプル問題について](https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260622.html)
+- [IPA Data Spaces Academy](https://www.ipa.go.jp/digital/data/data-spaces-academy.html)
+- [データを戦略的に使いこなすためのデータマネジメント読本](https://www.ipa.go.jp/digital/data/f55m8k0000005msd-att/dsa005-data-management-guidebook-for-strategic-data-utilization.pdf)
+- [経営者のためのデータ経営読本](https://www.ipa.go.jp/digital/data/m42obm000000flkc-att/dsa001-data-management-guidebook-for-managers.pdf)
 - [IPA：AI事業者ガイドライン検討会](https://www.ipa.go.jp/disc/committee/expert-group-on-aigfb.html)
 - [DX推進指標](https://www.ipa.go.jp/digital/dx-suishin/about.html)
 
@@ -16,6 +21,7 @@
 
 - [個人情報保護委員会：法令・ガイドライン等](https://www.ppc.go.jp/personalinfo/legal/)
 - [デジタル庁：政府相互運用性フレームワーク（GIF）](https://www.digital.go.jp/policies/data_strategy_government_interoperability_framework)
+- [デジタル庁：データガバナンス・ガイドライン](https://www.digital.go.jp/news/71bf19c2-f804-488e-ab32-e7a044dcac58)
 - [e-Gov法令検索](https://elaws.e-gov.go.jp/)
 - [総務省・経済産業省：AI事業者ガイドライン](https://www.soumu.go.jp/main_sosiki/kenkyu/ai_network/02ryutsu20_04000019.html)
 
@@ -25,6 +31,8 @@
 
 - [W3C Data Catalog Vocabulary (DCAT)](https://www.w3.org/TR/vocab-dcat-3/)
 - [W3C Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
+- [W3C PROV-DM](https://www.w3.org/TR/prov-dm/)
+- [Japan AISI：データ品質マネジメントガイドブック](https://aisi.go.jp/output/output_framework/data_quality_management_guidebook)
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [ISO/IEC 25012 Data quality model（ISO紹介ページ）](https://www.iso.org/standard/35736.html)

@@ -27,6 +27,7 @@ nav:
   - 科目B演習: exercises/subject-b.md
   - 用語集: glossary.md
   - 参考資料: references.md
+  - 継続課題: project/backlog.md
 plugins:
   - search
 markdown_extensions:
