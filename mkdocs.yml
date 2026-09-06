@@ -1,0 +1,39 @@
+site_name: データマネジメント試験（仮称）教科書
+site_description: IPAデータマネジメント試験（仮称）の非公式・オープン教科書
+repo_url: https://github.com/WildDrake-note/DataManagementExamTextbook
+theme:
+  name: material
+  language: ja
+nav:
+  - はじめに: index.md
+  - 学習ガイド:
+      - ロードマップ: guide/roadmap.md
+      - シラバス対応表: guide/syllabus-map.md
+  - 第1部 基礎:
+      - 1. データマネジメント入門: chapters/01-foundations.md
+      - 2. データライフサイクル: chapters/02-lifecycle.md
+  - 第2部 統制と整備:
+      - 3. データガバナンス: chapters/03-governance.md
+      - 4. データ品質管理: chapters/04-quality.md
+      - 5. メタデータ管理: chapters/05-metadata.md
+      - 6. データモデルとデータ統合: chapters/06-model-integration.md
+      - 7. セキュリティ・法務・倫理: chapters/07-security-law-ethics.md
+      - 8. AIと非構造化データ: chapters/08-ai-unstructured.md
+  - 第3部 活用と改善:
+      - 9. データ基盤と分析基礎: chapters/09-platform-analysis.md
+      - 10. 意思決定と継続的改善: chapters/10-decision-improvement.md
+      - 11. 組織文化と協働: chapters/11-culture-collaboration.md
+      - 12. 技術動向とPoC: chapters/12-poc.md
+  - 科目B演習: exercises/subject-b.md
+  - 用語集: glossary.md
+  - 参考資料: references.md
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
