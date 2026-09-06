@@ -10,13 +10,16 @@
 - [教科書トップ](docs/index.md)
 - [学習ロードマップ](docs/guide/roadmap.md)
 - [シラバス対応表](docs/guide/syllabus-map.md)
+- [シラバスカバレッジ](docs/guide/coverage.md)
+- [科目A型問題集](docs/exercises/subject-a.md)
+- [科目B型ケース演習](docs/exercises/subject-b.md)
 - [用語集](docs/glossary.md)
 - [参考資料と出典方針](docs/references.md)
 - [継続課題](docs/project/backlog.md)
 
 ## 現在の状態
 
-初版では、公式シラバス全体を学習単位に分解し、サンプル問題で重視されたデータガバナンス、データ品質、メタデータ、責任分担、データ統合を優先して解説しています。未執筆・要検討事項はGitHub Issuesで管理します。
+初版では、公式シラバス全体を12章に分解し、科目A型24問と科目B型ケース演習を収録しています。カバレッジ表で「掲載・部分掲載・未掲載」を区別し、未執筆・要検討事項はGitHub Issuesで管理します。
 
 ## 基礎資料
 
@@ -34,7 +37,7 @@
 
 ## ライセンス
 
-本リポジトリで独自に作成した文章・図表・問題は[MIT License](LICENSE)で提供します。IPAなど第三者の著作物は各権利者の条件に従い、MIT Licenseの対象外です。詳細は[参考資料と出典方針](docs/references.md)を参照してください。
+本リポジトリで独自に作成した文章・図表・問題は[MIT License](LICENSE)で提供します。IPAなど第三者の著作物は各権利者の条件に従い、MIT Licenseの対象外です。詳細は[NOTICE](NOTICE)と[参考資料と出典方針](docs/references.md)を参照してください。
 
 ## 貢献
 

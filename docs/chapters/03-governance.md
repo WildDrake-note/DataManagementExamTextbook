@@ -75,6 +75,12 @@
 
 **解答例：** 分析担当者は変換規則、影響、前提を記録し、加工結果への説明責任を負います。元データのオーナーは原因を確認し、入力・連携・コード管理の恒久対策を主導します。カタログの定義が誤っていれば、その管理責任者が正式な承認を経て更新します。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [デジタル庁：データガバナンス・ガイドライン](https://www.digital.go.jp/news/71bf19c2-f804-488e-ab32-e7a044dcac58)
+- [NIST：Data Governance and Management Profile](https://www.nist.gov/privacy-framework/new-projects/data-governance-and-management-profile)
+
 ## まとめ
 
 - ガバナンスは、意思決定権と説明責任を明確にする。

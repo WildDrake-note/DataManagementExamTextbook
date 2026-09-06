@@ -87,6 +87,12 @@ AIを用いた場合も、利用データの範囲、対象期間、項目、前
 
 **解答例：** 比較期間、季節性、価格変更、他施策、対象顧客、利益、返品、在庫切れ、データ品質、事前に定めた成功基準を確認します。売上増加が施策によるものか、利益や長期効果を損ねていないかを検証します。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [IPA：データマネジメント読本](https://www.ipa.go.jp/digital/data/f55m8k0000005msd-att/dsa005-data-management-guidebook-for-strategic-data-utilization.pdf)
+- [NIST：AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
 ## まとめ
 
 - 分析結果を課題と結び付け、要因候補・示唆・対応案を区別する。

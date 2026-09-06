@@ -74,6 +74,12 @@ SSOTは、すべてを一つの物理データベースへ集約することだ�
 
 **解答：3。** 問題は名称が同じでも定義と粒度が異なることです。統合や計算の前に意味を揃える必要があります。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [IPA：データを戦略的に使いこなすためのデータマネジメント読本](https://www.ipa.go.jp/digital/data/f55m8k0000005msd-att/dsa005-data-management-guidebook-for-strategic-data-utilization.pdf)
+- [デジタル庁：データガバナンス・ガイドライン](https://www.digital.go.jp/news/71bf19c2-f804-488e-ab32-e7a044dcac58)
+
 ## まとめ
 
 - データマネジメントは、データを価値へ結びつけるための継続的な組織活動である。

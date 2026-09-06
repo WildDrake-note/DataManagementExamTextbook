@@ -81,6 +81,13 @@ IT部門が全テーブルと列名を自動収集してカタログへ登録し
 
 **解答例：** 顧客、商談、売上などの業務上の意味、適用範囲、利用条件、データオーナーといったビジネスメタデータが不足しています。業務部門の参画と継続更新が必要です。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [W3C：Data Catalog Vocabulary (DCAT) 3](https://www.w3.org/TR/vocab-dcat/)
+- [W3C：PROV-DM](https://www.w3.org/TR/prov-dm/)
+- [ISO：ISO/IEC 11179-1（紹介ページ）](https://www.iso.org/standard/78914.html)
+
 ## まとめ
 
 - メタデータはデータの探索・理解・統制・再利用を支える。

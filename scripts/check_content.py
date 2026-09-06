@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Repository-local checks for Markdown links and structure."""
+"""Repository-local checks for textbook structure and references."""
 from __future__ import annotations
 
 import re
@@ -12,9 +12,14 @@ LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 REQUIRED = {
     "README.md",
     "LICENSE",
+    "NOTICE",
     "CONTRIBUTING.md",
+    "references.yml",
     "docs/index.md",
     "docs/guide/syllabus-map.md",
+    "docs/guide/coverage.md",
+    "docs/exercises/subject-a.md",
+    "docs/exercises/subject-b.md",
     "docs/glossary.md",
 }
 
@@ -37,10 +42,39 @@ for path in MD_FILES:
                 f"broken local link: {path.relative_to(ROOT)} -> {target}"
             )
 
+registry = (ROOT / "references.yml").read_text(encoding="utf-8")
+source_ids = re.findall(r"^  - id: (\S+)$", registry, re.MULTILINE)
+source_urls = re.findall(r"^    url: (https://\S+)$", registry, re.MULTILINE)
+if len(source_ids) < 10:
+    errors.append("references.yml must contain at least 10 primary references")
+if len(source_ids) != len(set(source_ids)):
+    errors.append("duplicate source id in references.yml")
+if len(source_urls) != len(set(source_urls)):
+    errors.append("duplicate source URL in references.yml")
+if len(source_ids) != len(source_urls):
+    errors.append("every source in references.yml must have one HTTPS URL")
+for digest in re.findall(r"^    sha256: (\S+)$", registry, re.MULTILINE):
+    if not re.fullmatch(r"[0-9a-f]{64}", digest):
+        errors.append(f"invalid SHA-256 in references.yml: {digest}")
+
+subject_a = (ROOT / "docs/exercises/subject-a.md").read_text(encoding="utf-8")
+question_count = len(re.findall(r"^\*\*問\d+\*\*", subject_a, re.MULTILINE))
+if question_count < 24:
+    errors.append(f"subject-a must contain at least 24 questions: {question_count}")
+
+coverage = (ROOT / "docs/guide/coverage.md").read_text(encoding="utf-8")
+skill_rows = len(re.findall(r"^\| [1-4]-\d ", coverage, re.MULTILINE))
+if skill_rows != 16:
+    errors.append(f"coverage must list all 16 subject-B items: {skill_rows}")
+
 if errors:
     print("CHECK FAILED")
     for error in errors:
         print(f"- {error}")
     sys.exit(1)
 
-print(f"CHECK PASSED: {len(MD_FILES)} Markdown files")
+print(
+    f"CHECK PASSED: {len(MD_FILES)} Markdown files, "
+    f"{len(source_ids)} references, {question_count} subject-A questions, "
+    f"{skill_rows} subject-B items"
+)

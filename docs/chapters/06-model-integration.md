@@ -80,6 +80,12 @@ ECと店舗の顧客表には、それぞれ重複しない顧客IDがありま�
 
 **解答例：** 一意性の範囲が各システム内に限られ、同じ顧客へ共通のIDが割り当てられている保証がないためです。組織横断の識別子または妥当な対応付けルールが必要です。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [デジタル庁：政府相互運用性フレームワーク（GIF）](https://github.com/JDA-DM/GIF)
+- [OMG：Unified Modeling Language 2.5.1](https://www.omg.org/spec/UML/2.5.1/PDF/)
+
 ## まとめ
 
 - モデルはデータ構造の背後にある業務上の意味を示す。

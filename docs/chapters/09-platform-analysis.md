@@ -100,6 +100,12 @@ ETLは抽出後に変換して格納し、ELTは抽出・格納後に変換し�
 
 **解答例：** 店舗規模や来客数が両方を増やす交絡要因かもしれず、売上が大きいから従業員を増やした逆因果も考えられます。期間、店舗規模、施策、選定方法を確認し、必要なら追加分析や検証を行います。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [W3C：Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
+- [デジタル庁：政府相互運用性フレームワーク（GIF）](https://github.com/JDA-DM/GIF)
+
 ## まとめ
 
 - 基盤は蓄積だけでなく、品質・意味・権限・提供を支える。

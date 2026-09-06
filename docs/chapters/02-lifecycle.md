@@ -81,6 +81,12 @@
 
 **解答例：** 正式システムだけを削除対象とし、複製先を把握・統制できていません。データの所在、共有履歴、保存期間、廃棄責任をライフサイクル全体で管理する必要があります。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [IPA：データマネジメント読本](https://www.ipa.go.jp/digital/data/f55m8k0000005msd-att/dsa005-data-management-guidebook-for-strategic-data-utilization.pdf)
+- [国立公文書館：公文書管理関係法規集](https://www.archives.go.jp/thinktank/database/standards/regs.html)
+
 ## まとめ
 
 - ライフサイクルは生成から廃棄までを一体として扱う。

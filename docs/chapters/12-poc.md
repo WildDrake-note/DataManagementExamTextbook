@@ -102,6 +102,12 @@ PoC環境と本番環境の差を明示します。小規模データで成功�
 
 **解答例：** 対象選定の偏り、長文・表・画像・例外文書、評価基準、複数評価者の一致、誤要約の影響、機密性、処理時間、費用、利用者確認負荷、モデル変更時の再評価などが不足しています。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [NIST：AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- [NIST：AI RMF Playbook](https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook)
+
 ## まとめ
 
 - 技術動向は自組織の課題、条件、リスクに照らして評価する。

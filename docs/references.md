@@ -4,6 +4,8 @@
 
 本書は、IPAの公式資料を試験範囲に関する一次情報として扱います。外部資料は、概念の理解、法令・標準・ガイドラインの確認、実務例の補足に使用します。外部資料の内容を、そのまま試験範囲であるとはみなしません。
 
+資料の版、状態、確認日、分野、固定PDFのSHA-256は、リポジトリ直下の [`references.yml`](https://github.com/WildDrake-note/DataManagementExamTextbook/blob/main/references.yml) で機械可読に管理します。
+
 ## IPA公式資料
 
 - [データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
@@ -53,6 +55,8 @@ DAMA-DMBOKやEDM Councilの成果物は有用な参考資料ですが、それ�
 - リンク先の第三者著作物：各権利者の条件
 - 引用する場合：必要性、最小限性、主従関係、出典明示を確認
 - 公式サンプル問題：本書には複製せず、公式PDFへのリンクと本書独自の解説を掲載
+
+MIT Licenseの適用範囲と第三者著作物の扱いは、リポジトリ直下の [`NOTICE`](https://github.com/WildDrake-note/DataManagementExamTextbook/blob/main/NOTICE) にも記載しています。
 
 ## 情報の確度
 

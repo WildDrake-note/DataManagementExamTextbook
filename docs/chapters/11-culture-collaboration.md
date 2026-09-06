@@ -77,6 +77,12 @@ BIツールやデータ基盤を導入しても、指標定義が部門で異な
 
 **解答例：** 受注・出荷・請求・入金のどの時点を売上とするか、対象期間、取消・返品、税、更新時点、粒度を比較します。各数値の目的と責任者を明確にし、必要なら用途別の定義としてグロッサリーへ登録します。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [デジタル庁：データガバナンス・ガイドライン](https://www.digital.go.jp/news/71bf19c2-f804-488e-ab32-e7a044dcac58)
+- [IPA：経営者のためのデータ経営読本](https://www.ipa.go.jp/digital/data/m42obm000000flkc-att/dsa001-data-management-guidebook-for-managers.pdf)
+
 ## まとめ
 
 - データ文化は、ツールではなく役割・対話・日常行動で定着する。

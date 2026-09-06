@@ -1,0 +1,134 @@
+version: 1
+checked_on: "2026-09-06"
+policy:
+  - 試験範囲はIPA公式シラバスを優先する
+  - 案やドラフトは文書状態を明記する
+  - 固定PDFと最新版案内ページを可能な限り併記する
+  - 第三者資料の公開閲覧可否と再配布条件を区別する
+sources:
+  - id: ipa-syllabus-page
+    organization: IPA
+    title: 新試験制度のシラバス案について
+    url: https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260630.html
+    status: 案内ページ
+    fields: [試験範囲, 改版確認]
+  - id: ipa-syllabus-0-1
+    organization: IPA
+    title: データマネジメント試験（仮称）シラバス（案）Ver.0.1
+    url: https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf
+    status: 案
+    fields: [試験範囲, 科目A, 科目B]
+    sha256: 26bece68d5ea9449db372fbae5ec3557d7b8e37673c117c667181101a770d66a
+  - id: ipa-sample-a
+    organization: IPA
+    title: データマネジメント試験（仮称）科目Aサンプル問題
+    url: https://www.ipa.go.jp/shiken/syllabus/henkou/2026/rcu1hd000000yulp-att/dm_kamoku_a_sample.pdf
+    status: サンプル
+    fields: [科目A, 演習設計]
+    sha256: f9eea3de3607c221cb7cc4c1123ef47be2cb1a634f0493a1dcaec7d746a34417
+  - id: ipa-sample-b
+    organization: IPA
+    title: データマネジメント試験（仮称）科目Bサンプル問題
+    url: https://www.ipa.go.jp/shiken/syllabus/henkou/2026/rcu1hd000000yulp-att/dm_kamoku_b_sample.pdf
+    status: サンプル
+    fields: [科目B, 演習設計]
+    sha256: e4dea0b3e844ef42794ea64f0e8ee44bb73f7a5f076b1928279292628870e114
+  - id: ipa-management-reader
+    organization: IPA
+    title: データを戦略的に使いこなすためのデータマネジメント読本
+    url: https://www.ipa.go.jp/digital/data/f55m8k0000005msd-att/dsa005-data-management-guidebook-for-strategic-data-utilization.pdf
+    status: 最終
+    fields: [基礎, ライフサイクル, 品質, 相互運用性]
+  - id: digital-governance
+    organization: デジタル庁
+    title: データガバナンス・ガイドライン
+    url: https://www.digital.go.jp/news/71bf19c2-f804-488e-ab32-e7a044dcac58
+    status: 最終
+    fields: [ガバナンス, 組織, 成熟度]
+  - id: digital-gif
+    organization: デジタル庁
+    title: 政府相互運用性フレームワーク（GIF）
+    url: https://github.com/JDA-DM/GIF
+    status: 継続更新
+    fields: [データモデル, 標準化, 相互運用性]
+  - id: aisi-data-quality
+    organization: Japan AISI
+    title: データ品質マネジメントガイドブック
+    url: https://aisi.go.jp/output/output_framework/data_quality_management_guidebook
+    status: 継続更新
+    fields: [データ品質, AI]
+  - id: ppc-guidelines
+    organization: 個人情報保護委員会
+    title: 個人情報保護法等の法令・ガイドライン
+    url: https://www.ppc.go.jp/personalinfo/legal/
+    status: 継続更新
+    fields: [個人情報, 安全管理, 第三者提供]
+  - id: soumu-meti-ai
+    organization: 総務省・経済産業省
+    title: AI事業者ガイドライン
+    url: https://www.soumu.go.jp/main_sosiki/kenkyu/ai_network/02ryutsu20_04000019.html
+    status: 継続更新
+    fields: [AIガバナンス, リスク]
+  - id: nist-csf
+    organization: NIST
+    title: Cybersecurity Framework 2.0
+    url: https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final
+    status: 最終
+    fields: [セキュリティ, リスク]
+  - id: nist-privacy
+    organization: NIST
+    title: Privacy Framework
+    url: https://www.nist.gov/privacy-framework
+    status: 継続更新
+    fields: [プライバシー, リスク]
+  - id: nist-ai-rmf
+    organization: NIST
+    title: AI Risk Management Framework
+    url: https://www.nist.gov/itl/ai-risk-management-framework
+    status: 最終
+    fields: [AI, リスク, PoC]
+  - id: w3c-dcat
+    organization: W3C
+    title: Data Catalog Vocabulary (DCAT) Version 3
+    url: https://www.w3.org/TR/vocab-dcat/
+    status: Recommendation
+    fields: [メタデータ, データカタログ]
+  - id: w3c-prov
+    organization: W3C
+    title: PROV-DM
+    url: https://www.w3.org/TR/prov-dm/
+    status: Recommendation
+    fields: [来歴, リネージ]
+  - id: w3c-dwbp
+    organization: W3C
+    title: Data on the Web Best Practices
+    url: https://www.w3.org/TR/dwbp/
+    status: Recommendation
+    fields: [公開, 再利用, メタデータ]
+  - id: iso-25012
+    organization: ISO
+    title: ISO/IEC 25012 Data quality model（紹介ページ）
+    url: https://www.iso.org/standard/35736.html
+    status: 規格紹介
+    fields: [データ品質]
+    reuse_note: 規格本文は転載しない
+  - id: iso-11179
+    organization: ISO
+    title: ISO/IEC 11179-1 Metadata registries（紹介ページ）
+    url: https://www.iso.org/standard/78914.html
+    status: 規格紹介
+    fields: [メタデータ]
+    reuse_note: 規格本文は転載しない
+  - id: omg-uml
+    organization: OMG
+    title: Unified Modeling Language 2.5.1
+    url: https://www.omg.org/spec/UML/2.5.1/PDF/
+    status: 最終
+    fields: [データモデル, UML]
+    reuse_note: 独自の例を作図する
+  - id: archives-rules
+    organization: 国立公文書館
+    title: 公文書管理関係法規集
+    url: https://www.archives.go.jp/thinktank/database/standards/regs.html
+    status: 継続更新
+    fields: [保存, 廃棄, 記録管理]

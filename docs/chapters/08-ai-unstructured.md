@@ -81,6 +81,12 @@ AIがツールやシステムを操作する場合、誤った出力が実際の
 
 **解答例：** 文書の最新版管理、アクセス権、検索漏れ、誤った文書の取得、生成時の誤要約、引用の不一致、機密情報の出力、利用ログの取扱いなどが残るためです。情報源・検索・生成・権限・人間確認を一体で管理します。
 
+## 主な参照資料
+
+- [IPA：データマネジメント試験（仮称）シラバス（案）Ver.0.1](https://www.ipa.go.jp/shiken/syllabus/minaoshi/rcu1hd000001g4ri-att/syllabus_dm_ver0_1.pdf)
+- [総務省・経済産業省：AI事業者ガイドライン](https://www.soumu.go.jp/main_sosiki/kenkyu/ai_network/02ryutsu20_04000019.html)
+- [NIST：AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
 ## まとめ
 
 - AI利用では、入力データ、モデル、出力、実行権限、人間の関与を管理する。
