@@ -8,6 +8,7 @@ nav:
   - はじめに: index.md
   - 学習ガイド:
       - ロードマップ: guide/roadmap.md
+      - 図表で振り返る: guide/visual-review.md
       - シラバス対応表: guide/syllabus-map.md
       - シラバスカバレッジ: guide/coverage.md
   - 第1部 基礎:

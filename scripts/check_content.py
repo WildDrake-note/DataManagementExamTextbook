@@ -58,9 +58,37 @@ for digest in re.findall(r"^    sha256: (\S+)$", registry, re.MULTILINE):
         errors.append(f"invalid SHA-256 in references.yml: {digest}")
 
 subject_a = (ROOT / "docs/exercises/subject-a.md").read_text(encoding="utf-8")
-question_count = len(re.findall(r"^\*\*問\d+\*\*", subject_a, re.MULTILINE))
-if question_count < 24:
-    errors.append(f"subject-a must contain at least 24 questions: {question_count}")
+question_numbers = [
+    int(value)
+    for value in re.findall(r"^\*\*問(\d+)\*\*", subject_a, re.MULTILINE)
+]
+question_count = len(question_numbers)
+answer_numbers = [
+    int(value)
+    for value in re.findall(r"^\|\s*(\d+)\s*\|\s*[1-4]\s*\|", subject_a, re.MULTILINE)
+]
+if question_count < 60:
+    errors.append(f"subject-a must contain at least 60 questions: {question_count}")
+if question_numbers != list(range(1, question_count + 1)):
+    errors.append("subject-a question numbers must be unique and sequential")
+if answer_numbers != question_numbers:
+    errors.append("subject-a answer rows must match all question numbers in order")
+for chapter in range(1, 13):
+    match = re.search(
+        rf"^### 第{chapter}章：.*?$(.*?)(?=^### 第\d+章：|^## 解答・解説)",
+        subject_a,
+        re.MULTILINE | re.DOTALL,
+    )
+    chapter_questions = (
+        len(re.findall(r"^\*\*問\d+\*\*", match.group(1), re.MULTILINE))
+        if match
+        else 0
+    )
+    if chapter_questions != 5:
+        errors.append(
+            f"subject-a chapter {chapter} must contain exactly 5 questions: "
+            f"{chapter_questions}"
+        )
 
 subject_b = (ROOT / "docs/exercises/subject-b.md").read_text(encoding="utf-8")
 case_count = len(re.findall(r"^## ケース\d+：", subject_b, re.MULTILINE))
